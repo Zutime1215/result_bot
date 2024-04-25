@@ -5,7 +5,7 @@ from scraper import scraper
 from urllib.parse import quote_plus
 
 with open('api.txt', "r") as f:
-	api = json.load(f)
+	api = f.read()
 
 base_url = "https://api.telegram.org/"
 update_url = base_url + api + "getUpdates"
